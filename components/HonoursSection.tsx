@@ -62,7 +62,7 @@ export default function HonoursSection() {
         transition={{ duration: 0.6 }}
         className="mb-16"
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-3">Recognition</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-3">Recognition</p>
         <h2 className="text-4xl md:text-5xl font-black text-slate-100 section-header">Honours & Awards</h2>
       </motion.div>
 
@@ -103,7 +103,7 @@ export default function HonoursSection() {
         transition={{ duration: 0.6 }}
         className="mb-6"
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-blue-400 mb-6">Extra-Curricular</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-400 mb-6">Extra-Curricular</p>
         <div className="flex flex-wrap gap-3">
           {extras.map((e, i) => (
             <motion.div

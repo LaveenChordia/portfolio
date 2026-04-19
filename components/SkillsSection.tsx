@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 const skillGroups = [
   {
     category: "Languages & Frameworks",
-    color: "#f97316",
+    color: "#ffffff",
     icon: "⚡",
     skills: ["Python", "JavaScript", "TypeScript", "React", "Next.js", "Node.js"],
   },
   {
     category: "AI & Machine Learning",
-    color: "#3b82f6",
+    color: "#a3a3a3",
     icon: "🤖",
     skills: ["LLM Integration", "OpenAI API", "Anthropic API", "Hugging Face", "Applied ML Research", "Computer Vision"],
   },
@@ -50,7 +50,7 @@ export default function SkillsSection() {
         transition={{ duration: 0.6 }}
         className="mb-16"
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-3">Expertise</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-3">Expertise</p>
         <h2 className="text-4xl md:text-5xl font-black text-slate-100 section-header">Skills</h2>
       </motion.div>
 
@@ -94,7 +94,7 @@ export default function SkillsSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-blue-400 mb-6">Certifications</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-400 mb-6">Certifications</p>
         <div className="flex flex-wrap gap-4">
           {certs.map((c, i) => (
             <div key={i} className="glass rounded-xl px-5 py-3 flex items-center gap-3 hover:border-white/15 transition-all duration-200">

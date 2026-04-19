@@ -12,7 +12,7 @@ const links = [
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
       </svg>
     ),
-    color: "#f97316",
+    color: "#ffffff",
   },
   {
     label: "LinkedIn",
@@ -24,7 +24,7 @@ const links = [
         <circle cx="4" cy="4" r="2" />
       </svg>
     ),
-    color: "#3b82f6",
+    color: "#a3a3a3",
   },
   {
     label: "Phone",
@@ -48,7 +48,7 @@ export default function ContactSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-4">Get in Touch</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-4">Get in Touch</p>
         <h2 className="text-4xl md:text-6xl font-black text-slate-100 mb-6 leading-tight">
           Let&apos;s build something<br />
           <span className="gradient-text">amazing together.</span>

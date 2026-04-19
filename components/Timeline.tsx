@@ -8,7 +8,7 @@ const experiences = [
     company: "Nexalyte Tech Solutions",
     type: "Startup",
     period: "Oct 2025 — Present",
-    color: "#f97316",
+    color: "#ffffff",
     icon: "🚀",
     bullets: [
       "Built custom software and AI-driven workflow solutions for MSMEs",
@@ -21,7 +21,7 @@ const experiences = [
     company: "The Tech Clan",
     type: "Internship",
     period: "Jun 2025 — Jun 2026",
-    color: "#3b82f6",
+    color: "#a3a3a3",
     icon: "💻",
     bullets: [
       "Built production web apps for legal and healthcare domains",
@@ -122,7 +122,7 @@ export default function Timeline() {
         transition={{ duration: 0.6 }}
         className="mb-16"
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-3">Career</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-3">Career</p>
         <h2 className="text-4xl md:text-5xl font-black text-slate-100 section-header">Work Experience</h2>
       </motion.div>
       <div>

@@ -12,14 +12,14 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-3">About Me</p>
+          <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-3">About Me</p>
           <h2 className="text-4xl md:text-5xl font-black text-slate-100 mb-8 section-header leading-tight">
             Student.<br />Builder.<br />
             <span className="gradient-text">Co-Founder.</span>
           </h2>
           <div className="space-y-4 text-slate-400 leading-relaxed">
             <p>
-              I&apos;m <span className="text-slate-200 font-semibold">Laveen Subhash Chordia</span>, a B.Tech Computer Engineering student at Vishwakarma University (CGPA: 9.19) and Co-Founder of <span className="text-orange-400 font-semibold">Nexalyte Tech Solutions</span>.
+              I&apos;m <span className="text-slate-200 font-semibold">Laveen Subhash Chordia</span>, a B.Tech Computer Engineering student at Vishwakarma University (CGPA: 9.19) and Co-Founder of <span className="text-neutral-300 font-semibold">Nexalyte Tech Solutions</span>.
             </p>
             <p>
               I build AI-driven software for MSMEs, full-stack production apps (legal, healthcare, fintech), and explore cutting-edge ML — from LLMs to Computer Vision. My work sits at the intersection of business strategy and engineering.
@@ -39,8 +39,8 @@ export default function AboutSection() {
           className="grid grid-cols-2 gap-4"
         >
           {[
-            { stat: "9.19", label: "CGPA", sub: "Vishwakarma University", color: "#f97316" },
-            { stat: "3+", label: "Startups & Internships", sub: "Real product experience", color: "#3b82f6" },
+            { stat: "9.19", label: "CGPA", sub: "Vishwakarma University", color: "#ffffff" },
+            { stat: "3+", label: "Startups & Internships", sub: "Real product experience", color: "#a3a3a3" },
             { stat: "5", label: "Competition Awards", sub: "National & International", color: "#8b5cf6" },
             { stat: "4", label: "Projects Shipped", sub: "AI · FinTech · Social Impact", color: "#10b981" },
           ].map((item, i) => (
@@ -68,7 +68,7 @@ export default function AboutSection() {
                   <p className="text-sm font-bold text-slate-200">B.Tech — Computer Engineering</p>
                   <p className="text-xs text-slate-500">Vishwakarma University, Pune · 2023–2026</p>
                 </div>
-                <span className="text-orange-400 font-black text-sm shrink-0">9.19 / 10</span>
+                <span className="text-neutral-300 font-black text-sm shrink-0">9.19 / 10</span>
               </div>
               <div className="w-full h-px bg-white/5" />
               <div className="flex items-start justify-between gap-2">
@@ -76,7 +76,7 @@ export default function AboutSection() {
                   <p className="text-sm font-bold text-slate-200">Diploma — Computer Engineering</p>
                   <p className="text-xs text-slate-500">MIT WPU School of Diploma · 2020–2023</p>
                 </div>
-                <span className="text-blue-400 font-black text-sm shrink-0">85.03%</span>
+                <span className="text-neutral-400 font-black text-sm shrink-0">85.03%</span>
               </div>
             </div>
           </div>

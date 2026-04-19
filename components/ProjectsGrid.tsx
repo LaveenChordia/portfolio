@@ -10,7 +10,7 @@ const projects = [
     tags: ["CNN", "LSTM", "ResNet50", "Python", "Computer Vision"],
     stat: "93.25% accuracy",
     statLabel: "Detection Accuracy",
-    color: "#f97316",
+    color: "#ffffff",
     emoji: "🛡️",
     link: "#",
   },
@@ -22,7 +22,7 @@ const projects = [
     tags: ["Python", "Random Forest", "Zerodha API", "JavaScript", "ML"],
     stat: "80/20 split",
     statLabel: "Validated Models",
-    color: "#3b82f6",
+    color: "#a3a3a3",
     emoji: "📈",
     link: "#",
   },
@@ -62,7 +62,7 @@ export default function ProjectsGrid() {
         transition={{ duration: 0.6 }}
         className="mb-16"
       >
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-3">Work</p>
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-3">Work</p>
         <h2 className="text-4xl md:text-5xl font-black text-slate-100 section-header">Projects</h2>
       </motion.div>
 

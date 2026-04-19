@@ -54,7 +54,7 @@ export default function ScrollyHero() {
       vx: (Math.random() - 0.5) * 0.4,
       vy: (Math.random() - 0.5) * 0.4,
       radius: Math.random() * 2 + 0.5,
-      color: Math.random() > 0.5 ? "#f97316" : "#3b82f6",
+      color: Math.random() > 0.5 ? "#ffffff" : "#a3a3a3",
       alpha: Math.random() * 0.6 + 0.1,
     }));
 
@@ -74,22 +74,22 @@ export default function ScrollyHero() {
 
       // Radial glow — orange top-right
       const orangeGlow = ctx.createRadialGradient(w * 0.75, h * 0.2, 0, w * 0.75, h * 0.2, w * 0.5);
-      orangeGlow.addColorStop(0, `rgba(249,115,22,${0.12 + progress * 0.06})`);
+      orangeGlow.addColorStop(0, `rgba(255,255,255,${0.12 + progress * 0.06})`);
       orangeGlow.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = orangeGlow;
       ctx.fillRect(0, 0, w, h);
 
       // Radial glow — blue bottom-left
       const blueGlow = ctx.createRadialGradient(w * 0.25, h * 0.8, 0, w * 0.25, h * 0.8, w * 0.6);
-      blueGlow.addColorStop(0, `rgba(59,130,246,${0.10 + progress * 0.08})`);
+      blueGlow.addColorStop(0, `rgba(163,163,163,${0.10 + progress * 0.08})`);
       blueGlow.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = blueGlow;
       ctx.fillRect(0, 0, w, h);
 
       // Center spotlight
       const centerGlow = ctx.createRadialGradient(w * 0.5, h * 0.45, 0, w * 0.5, h * 0.45, w * 0.35);
-      centerGlow.addColorStop(0, `rgba(249,115,22,${0.04 + progress * 0.04})`);
-      centerGlow.addColorStop(0.5, `rgba(59,130,246,${0.03})`);
+      centerGlow.addColorStop(0, `rgba(255,255,255,${0.04 + progress * 0.04})`);
+      centerGlow.addColorStop(0.5, `rgba(163,163,163,${0.03})`);
       centerGlow.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = centerGlow;
       ctx.fillRect(0, 0, w, h);
@@ -113,8 +113,8 @@ export default function ScrollyHero() {
         const y = h * (0.3 + i * 0.2);
         const grad = ctx.createLinearGradient(0, y, w, y);
         grad.addColorStop(0, "rgba(0,0,0,0)");
-        grad.addColorStop(0.3 + progress * 0.2, `rgba(249,115,22,${0.06 + progress * 0.04})`);
-        grad.addColorStop(0.7 - progress * 0.1, `rgba(59,130,246,${0.04 + progress * 0.03})`);
+        grad.addColorStop(0.3 + progress * 0.2, `rgba(255,255,255,${0.06 + progress * 0.04})`);
+        grad.addColorStop(0.7 - progress * 0.1, `rgba(163,163,163,${0.04 + progress * 0.03})`);
         grad.addColorStop(1, "rgba(0,0,0,0)");
         ctx.fillStyle = grad;
         ctx.fillRect(0, y - 0.5, w, 1);
@@ -140,7 +140,7 @@ export default function ScrollyHero() {
 
         {/* Nav */}
         <nav className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-8 py-6">
-          <div className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-400">
+          <div className="text-sm font-semibold tracking-[0.2em] uppercase text-neutral-300">
             LC
           </div>
           <div className="flex gap-8 text-sm font-medium text-slate-400">
@@ -148,7 +148,7 @@ export default function ScrollyHero() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="hover:text-orange-400 transition-colors duration-200"
+                className="hover:text-neutral-300 transition-colors duration-200"
               >
                 {item}
               </a>
@@ -190,7 +190,7 @@ export default function ScrollyHero() {
           style={{ opacity: text2Opacity, x: text2X }}
           className="absolute inset-0 flex flex-col justify-center pl-12 md:pl-24 z-10 max-w-xl"
         >
-          <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400 mb-4">
+          <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-300 mb-4">
             What I do
           </p>
           <h2 className="text-5xl md:text-7xl font-black leading-tight text-slate-100">
@@ -209,7 +209,7 @@ export default function ScrollyHero() {
           className="absolute inset-0 flex flex-col justify-center items-end pr-12 md:pr-24 z-10"
         >
           <div className="max-w-lg text-right">
-            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-blue-400 mb-4">
+            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-neutral-400 mb-4">
               My mission
             </p>
             <h2 className="text-5xl md:text-7xl font-black leading-tight text-slate-100">
@@ -228,7 +228,7 @@ export default function ScrollyHero() {
           Pune, India
         </div>
         <div className="absolute bottom-8 left-8 z-10 flex items-center gap-2">
-          <div className="w-6 h-px bg-orange-500/50 neon-line" />
+          <div className="w-6 h-px bg-neutral-400/50 neon-line" />
           <span className="text-slate-600 text-xs tracking-widest uppercase">2026</span>
         </div>
       </div>

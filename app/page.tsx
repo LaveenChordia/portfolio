@@ -10,7 +10,7 @@ const experiences = [
     company: "Nexalyte Tech Solutions",
     type: "Startup",
     period: "Oct 2025 — Present",
-    color: "#f97316",
+    color: "#ffffff",
     icon: "🚀",
     bullets: [
       "Built custom software and AI-driven workflow solutions for MSMEs.",
@@ -23,7 +23,7 @@ const experiences = [
     company: "The Tech Clan",
     type: "Internship",
     period: "Jun 2025 — Jun 2026",
-    color: "#3b82f6",
+    color: "#a3a3a3",
     icon: "💻",
     bullets: [
       "Built production web apps for legal and healthcare domains.",
@@ -67,7 +67,7 @@ const projects = [
     tags: ["CNN", "LSTM", "ResNet50", "Python", "OpenCV"],
     stat: "93.25%",
     statLbl: "Detection Accuracy",
-    color: "#f97316",
+    color: "#ffffff",
     emoji: "🛡️",
   },
   {
@@ -77,7 +77,7 @@ const projects = [
     tags: ["Python", "Random Forest", "Zerodha API", "FinTech"],
     stat: "80/20",
     statLbl: "Validated Split",
-    color: "#3b82f6",
+    color: "#a3a3a3",
     emoji: "📈",
   },
   {
@@ -119,8 +119,8 @@ const extras = [
 ];
 
 const skillGroups = [
-  { cat: "Languages & Frameworks", icon: "⚡", color: "#f97316", skills: ["Python", "JavaScript", "TypeScript", "React", "Next.js", "Node.js"] },
-  { cat: "AI & Machine Learning", icon: "🤖", color: "#3b82f6", skills: ["LLM Integration", "OpenAI API", "Anthropic API", "Hugging Face", "Applied ML Research", "Computer Vision"] },
+  { cat: "Languages & Frameworks", icon: "⚡", color: "#ffffff", skills: ["Python", "JavaScript", "TypeScript", "React", "Next.js", "Node.js"] },
+  { cat: "AI & Machine Learning", icon: "🤖", color: "#a3a3a3", skills: ["LLM Integration", "OpenAI API", "Anthropic API", "Hugging Face", "Applied ML Research", "Computer Vision"] },
   { cat: "Databases & Data", icon: "🗄️", color: "#8b5cf6", skills: ["MongoDB", "MySQL", "REST APIs", "Power BI", "Excel"] },
   { cat: "Product & Business", icon: "📊", color: "#10b981", skills: ["Product Discovery", "MVP Development", "Startup Ops", "MSME Digitization", "Pricing Strategy"] },
   { cat: "Tools & Practices", icon: "🛠️", color: "#f59e0b", skills: ["Git", "Process Automation", "Requirements Analysis", "Client Validation"] },
@@ -207,19 +207,19 @@ function HeroCanvas() {
 
       // Orange radial — top right
       const og = ctx.createRadialGradient(w * 0.72, h * 0.22, 0, w * 0.72, h * 0.22, w * 0.55);
-      og.addColorStop(0, `rgba(249,115,22,${0.13 + p * 0.06})`);
+      og.addColorStop(0, `rgba(255,255,255,${0.13 + p * 0.06})`);
       og.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = og; ctx.fillRect(0, 0, w, h);
 
       // Blue radial — bottom left
       const bg2 = ctx.createRadialGradient(w * 0.22, h * 0.78, 0, w * 0.22, h * 0.78, w * 0.6);
-      bg2.addColorStop(0, `rgba(59,130,246,${0.10 + p * 0.08})`);
+      bg2.addColorStop(0, `rgba(163,163,163,${0.10 + p * 0.08})`);
       bg2.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = bg2; ctx.fillRect(0, 0, w, h);
 
       // Center glow
       const cg = ctx.createRadialGradient(w * 0.5, h * 0.45, 0, w * 0.5, h * 0.45, w * 0.3);
-      cg.addColorStop(0, `rgba(249,115,22,${0.04 + p * 0.03})`);
+      cg.addColorStop(0, `rgba(255,255,255,${0.04 + p * 0.03})`);
       cg.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = cg; ctx.fillRect(0, 0, w, h);
 
@@ -228,7 +228,7 @@ function HeroCanvas() {
         pt.x += pt.vx; pt.y += pt.vy;
         if (pt.x < 0) pt.x = w; if (pt.x > w) pt.x = 0;
         if (pt.y < 0) pt.y = h; if (pt.y > h) pt.y = 0;
-        const col = pt.org ? `rgba(249,115,22,${pt.alpha})` : `rgba(59,130,246,${pt.alpha})`;
+        const col = pt.org ? `rgba(255,255,255,${pt.alpha})` : `rgba(163,163,163,${pt.alpha})`;
         ctx.beginPath(); ctx.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2);
         ctx.fillStyle = col; ctx.fill();
       });
@@ -238,8 +238,8 @@ function HeroCanvas() {
         const y = h * (0.2 + i * 0.2);
         const sg = ctx.createLinearGradient(0, y, w, y);
         sg.addColorStop(0, "rgba(0,0,0,0)");
-        sg.addColorStop(0.4, `rgba(249,115,22,${0.05 + p * 0.03})`);
-        sg.addColorStop(0.6, `rgba(59,130,246,${0.04 + p * 0.02})`);
+        sg.addColorStop(0.4, `rgba(255,255,255,${0.05 + p * 0.03})`);
+        sg.addColorStop(0.6, `rgba(163,163,163,${0.04 + p * 0.02})`);
         sg.addColorStop(1, "rgba(0,0,0,0)");
         ctx.fillStyle = sg; ctx.fillRect(0, y - 0.5, w, 1);
       }
@@ -351,7 +351,7 @@ export default function Page() {
               <span className="gradient-text">Co-Founder.</span>
             </h2>
             <p className="about-bio">
-              I&apos;m <strong>Laveen Subhash Chordia</strong>, a B.Tech Computer Engineering student at Vishwakarma University (<span className="hi" style={{ color: "#f97316" }}>CGPA: 9.19</span>) and Co-Founder of <strong>Nexalyte Tech Solutions</strong>.
+              I&apos;m <strong>Laveen Subhash Chordia</strong>, a B.Tech Computer Engineering student at Vishwakarma University (<span className="hi" style={{ color: "#ffffff" }}>CGPA: 9.19</span>) and Co-Founder of <strong>Nexalyte Tech Solutions</strong>.
             </p>
             <p className="about-bio" style={{ marginTop: 14 }}>
               I build AI-driven software for MSMEs, full-stack production apps across legal, healthcare, and fintech domains, and conduct applied ML research — from LLMs to Computer Vision.
@@ -365,8 +365,8 @@ export default function Page() {
           <div>
             <div className="stat-grid">
               {[
-                { n: "9.19", lbl: "CGPA", sub: "Vishwakarma University", c: "#f97316" },
-                { n: "3+", lbl: "Roles & Internships", sub: "Real product experience", c: "#3b82f6" },
+                { n: "9.19", lbl: "CGPA", sub: "Vishwakarma University", c: "#ffffff" },
+                { n: "3+", lbl: "Roles & Internships", sub: "Real product experience", c: "#a3a3a3" },
                 { n: "5", lbl: "Competition Awards", sub: "National & International", c: "#8b5cf6" },
                 { n: "4", lbl: "Projects Shipped", sub: "AI · FinTech · Impact", c: "#10b981" },
               ].map(s => (
@@ -385,14 +385,14 @@ export default function Page() {
                     <div className="edu-name">B.Tech — Computer Engineering</div>
                     <div className="edu-org">Vishwakarma University, Pune · 2023–2026</div>
                   </div>
-                  <div className="edu-grade" style={{ color: "#f97316" }}>9.19 / 10</div>
+                  <div className="edu-grade" style={{ color: "#ffffff" }}>9.19 / 10</div>
                 </div>
                 <div className="edu-row">
                   <div>
                     <div className="edu-name">Diploma — Computer Engineering</div>
                     <div className="edu-org">MIT WPU School of Diploma · 2020–2023</div>
                   </div>
-                  <div className="edu-grade" style={{ color: "#3b82f6" }}>85.03%</div>
+                  <div className="edu-grade" style={{ color: "#a3a3a3" }}>85.03%</div>
                 </div>
               </div>
             </div>
@@ -400,7 +400,7 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.2), transparent)" }} />
+      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(163,163,163,0.2), transparent)" }} />
 
       {/* ════════════════════════════════
           EXPERIENCE
@@ -488,7 +488,7 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(249,115,22,0.15), transparent)" }} />
+      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent)" }} />
 
       {/* ════════════════════════════════
           HONOURS
@@ -564,7 +564,7 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.2), transparent)" }} />
+      <div className="divider" style={{ background: "linear-gradient(90deg, transparent, rgba(163,163,163,0.2), transparent)" }} />
 
       {/* ════════════════════════════════
           CONTACT
@@ -583,12 +583,12 @@ export default function Page() {
           <div className="contact-links">
             {[
               {
-                href: "mailto:work.laveen@gmail.com", lbl: "Email", val: "work.laveen@gmail.com", color: "#f97316",
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                href: "mailto:work.laveen@gmail.com", lbl: "Email", val: "work.laveen@gmail.com", color: "#ffffff",
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               },
               {
-                href: "https://linkedin.com/in/chordialaveen/", lbl: "LinkedIn", val: "chordialaveen", color: "#3b82f6",
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="#3b82f6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                href: "https://linkedin.com/in/chordialaveen/", lbl: "LinkedIn", val: "chordialaveen", color: "#a3a3a3",
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="#a3a3a3"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
               },
               {
                 href: "tel:+917722097510", lbl: "Phone", val: "+91 7722097510", color: "#10b981",
