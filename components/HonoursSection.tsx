@@ -11,36 +11,76 @@ const honours = [
     icon: "🥇",
   },
   {
+    place: "1st",
+    event: "Pitchathon",
+    org: "Vishwakarma University",
+    detail: "Pitch Competition",
+    color: "#f59e0b",
+    icon: "🥇",
+  },
+  {
+    place: "1st",
+    event: "National Science Day Hackathon",
+    org: "National Science Day",
+    detail: "Hackathon",
+    color: "#f59e0b",
+    icon: "🥇",
+  },
+  {
     place: "2nd",
-    event: "Engineering Project Competition 2023",
+    event: "National Level Engineering Project Development Competition",
     org: "Symbiosis International University",
-    detail: "300+ participants · National Level",
+    detail: "Project Competition",
     color: "#94a3b8",
     icon: "🥈",
   },
   {
     place: "2nd",
-    event: "Project Competition & Ideation 2025",
-    org: "SKNCOE — Ideation Track",
-    detail: "550+ participants · IEEE Pune & Red Bull",
+    event: "Visionary Hackathon",
+    org: "Hackathon",
+    detail: "Competition",
+    color: "#94a3b8",
+    icon: "🥈",
+  },
+  {
+    place: "2nd",
+    event: "VYOMA Zonal Level Prototype Competition",
+    org: "AISSMS IOIT",
+    detail: "Zonal Level",
+    color: "#94a3b8",
+    icon: "🥈",
+  },
+  {
+    place: "2nd",
+    event: "CONVENE National Level Project Competition",
+    org: "Project Exhibition",
+    detail: "National Level",
     color: "#94a3b8",
     icon: "🥈",
   },
   {
     place: "3rd",
-    event: "Project Competition & Ideation 2025",
-    org: "SKNCOE — Project Showcase",
-    detail: "550+ participants · IEEE Pune & Red Bull",
+    event: "International Global Impact Startup Challenge",
+    org: "Singapore University of Social Sciences",
+    detail: "International Level",
+    color: "#cd7f32",
+    icon: "🌏",
+  },
+  {
+    place: "3rd",
+    event: "CONVENE National Level Project Competition",
+    org: "Ideation Exhibition",
+    detail: "National Level",
     color: "#cd7f32",
     icon: "🥉",
   },
   {
-    place: "3rd",
-    event: "Global Impact Startup Challenge",
-    org: "Singapore University of Social Sciences",
-    detail: "100+ participants · International",
-    color: "#cd7f32",
-    icon: "🌏",
+    place: "Consolation",
+    event: "Innovation Fest",
+    org: "Binghamton University New York",
+    detail: "Collaboration",
+    color: "#475569",
+    icon: "🏅",
   },
 ];
 
@@ -84,7 +124,7 @@ export default function HonoursSection() {
                   className="text-xs font-black tracking-widest uppercase"
                   style={{ color: h.color }}
                 >
-                  {h.place} Place
+                  {h.place}{["1st", "2nd", "3rd"].includes(h.place) ? " Place" : " Prize"}
                 </span>
                 <h3 className="text-sm font-bold text-slate-200 mt-0.5">{h.event}</h3>
                 <p className="text-xs text-slate-500 mt-0.5">{h.org}</p>
