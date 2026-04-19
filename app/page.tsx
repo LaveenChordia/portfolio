@@ -351,13 +351,13 @@ export default function Page() {
               <span className="gradient-text">Co-Founder.</span>
             </h2>
             <p className="about-bio">
-              I&apos;m <strong>Laveen Subhash Chordia</strong>, a B.Tech Computer Engineering student at Vishwakarma University (<span className="hi" style={{ color: "#ffffff" }}>CGPA: 9.19</span>) and Co-Founder of <strong>Nexalyte Tech Solutions</strong>.
+              I&apos;m <strong>Laveen Chordia</strong>, a Computer Engineer with hands-on experience across both technology and business. Over the past eight years, I&apos;ve been actively involved in my family&apos;s apparel business, where I worked on sales, customer acquisition, and operational strategy—shaping how I understand users, markets, and growth.
             </p>
             <p className="about-bio" style={{ marginTop: 14 }}>
-              I build AI-driven software for MSMEs, full-stack production apps across legal, healthcare, and fintech domains, and conduct applied ML research — from LLMs to Computer Vision.
+              Alongside this, I gained technical experience as a full-stack developer and am currently building V-COLLAB, a platform designed to help university students find the right collaborators, mentors, and real project opportunities. I also served as Co-founder at Nexalyte Tech Solutions, where we developed AI-driven software solutions for MSMEs.
             </p>
             <p className="about-bio" style={{ marginTop: 14 }}>
-              Off-screen: football team captain, All India Badminton representative at VU, and Dance Head at VU&apos;s Cultural Committee.
+              I&apos;m particularly interested in product management and consulting roles, where I can apply structured problem-solving, strategic thinking, and user-centric design to build and scale impactful solutions. I aim to combine my technical foundation with my strengths in business, sales, and operations to drive meaningful outcomes.
             </p>
           </div>
 
@@ -365,10 +365,10 @@ export default function Page() {
           <div>
             <div className="stat-grid">
               {[
-                { n: "9.19", lbl: "CGPA", sub: "Vishwakarma University", c: "#ffffff" },
-                { n: "3+", lbl: "Roles & Internships", sub: "Real product experience", c: "#a3a3a3" },
-                { n: "5", lbl: "Competition Awards", sub: "National & International", c: "#8b5cf6" },
-                { n: "4", lbl: "Projects Shipped", sub: "AI · FinTech · Impact", c: "#10b981" },
+                { n: "8+", lbl: "Years in Business", sub: "Sales, Strategy & Ops", c: "#ffffff" },
+                { n: "5+", lbl: "Roles & Internships", sub: "Real product experience", c: "#a3a3a3" },
+                { n: "10", lbl: "Competitions & Awards", sub: "National & International", c: "#8b5cf6" },
+                { n: "7+", lbl: "Projects Shipped", sub: "AI · FinTech · Impact", c: "#10b981" },
               ].map(s => (
                 <div key={s.lbl} className="card stat-card">
                   <div className="stat-num" style={{ color: s.c }}>{s.n}</div>
