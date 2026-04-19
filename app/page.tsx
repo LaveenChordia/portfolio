@@ -299,27 +299,27 @@ export default function Page() {
 
           {/* Overlay 2 — Left: What I Do */}
           <div className="hero-overlay" id="o2" style={{ opacity: 0 }}>
-            <span className="eyebrow">What I Build</span>
+            <span className="eyebrow">What do I build?</span>
             <h2 className="hero-h2" style={{ color: "#f1f5f9" }}>
-              I build<br />
-              <span className="gradient-text">digital</span><br />
-              experiences.
+              Scalable,<br />
+              <span className="gradient-text">impact-driven</span><br />
+              solutions.
             </h2>
             <p className="hero-sub" style={{ maxWidth: 340 }}>
-              From AI-driven workflows for MSMEs to production web apps — delivering real business value.
+              I build user-focused systems that solve real-world problems while improving access, usability, and adoption at scale.
             </p>
           </div>
 
           {/* Overlay 3 — Right: Mission */}
           <div className="hero-overlay" id="o3" style={{ opacity: 0 }}>
-            <span className="eyebrow eyebrow-blue">My Mission</span>
+            <span className="eyebrow eyebrow-blue">What is my mission?</span>
             <h2 className="hero-h2" style={{ color: "#f1f5f9", textAlign: "right" }}>
-              Bridging<br />
-              <span className="gradient-text">design</span><br />
-              &amp; engineering.
+              Enabling<br />
+              equitable <span className="gradient-text">access</span><br />
+              to growth.
             </h2>
             <p className="hero-sub" style={{ maxWidth: 340, textAlign: "right" }}>
-              Co-Founder of Nexalyte Tech — building software that solves real problems for real businesses.
+              My mission is to reduce barriers by helping people access the right tools, knowledge, and opportunities to grow independently.
             </p>
           </div>
 
