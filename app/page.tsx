@@ -294,12 +294,7 @@ export default function Page() {
               <span className="gradient-text">Laveen</span><br />
               <span style={{ color: "#f1f5f9" }}>Chordia</span>
             </h1>
-            <p className="hero-sub">Full-Stack Developer · Co-Founder · CGPA 9.19</p>
-            <div className="hero-tags">
-              {["React", "Python", "Next.js", "AI/ML", "MongoDB"].map(t => (
-                <span key={t} className="hero-tag">{t}</span>
-              ))}
-            </div>
+            <p className="hero-sub">User-focused builder of scalable products</p>
           </div>
 
           {/* Overlay 2 — Left: What I Do */}
