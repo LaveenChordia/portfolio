@@ -103,11 +103,16 @@ const projects = [
 ];
 
 const honours = [
-  { place: "1st", event: "Fusion 2025 — FinTech Hackathon", org: "IIC–E-Cell & IEEE, SKNCOE", detail: "600+ participants · National", color: "#f59e0b", emoji: "🥇" },
-  { place: "2nd", event: "Engineering Project Competition 2023", org: "Symbiosis International University", detail: "300+ participants · National", color: "#94a3b8", emoji: "🥈" },
-  { place: "2nd", event: "Project Competition & Ideation 2025", org: "SKNCOE — Ideation Track", detail: "550+ participants · IEEE Pune", color: "#94a3b8", emoji: "🥈" },
-  { place: "3rd", event: "Project Competition & Ideation 2025", org: "SKNCOE — Project Showcase", detail: "550+ participants · IEEE Pune", color: "#cd7f32", emoji: "🥉" },
-  { place: "3rd", event: "Global Impact Startup Challenge", org: "Singapore Univ. of Social Sciences", detail: "100+ participants · International", color: "#cd7f32", emoji: "🌏" },
+  { place: "1st", event: "Fusion 2025 — FinTech Hackathon", org: "IIC–E-Cell & IEEE, SKNCOE", detail: "600+ participants · National Level", color: "#f59e0b", emoji: "🥇" },
+  { place: "1st", event: "Pitchathon", org: "Vishwakarma University", detail: "Pitch Competition", color: "#f59e0b", emoji: "🥇" },
+  { place: "1st", event: "National Science Day Hackathon", org: "National Science Day", detail: "Hackathon", color: "#f59e0b", emoji: "🥇" },
+  { place: "2nd", event: "National Level Engineering Project Development Competition", org: "Symbiosis International University", detail: "Project Competition", color: "#94a3b8", emoji: "🥈" },
+  { place: "2nd", event: "Visionary Hackathon", org: "Hackathon", detail: "Competition", color: "#94a3b8", emoji: "🥈" },
+  { place: "2nd", event: "VYOMA Zonal Level Prototype Competition", org: "AISSMS IOIT", detail: "Zonal Level", color: "#94a3b8", emoji: "🥈" },
+  { place: "2nd", event: "CONVENE National Level Project Competition", org: "Project Exhibition", detail: "National Level", color: "#94a3b8", emoji: "🥈" },
+  { place: "3rd", event: "International Global Impact Startup Challenge", org: "Singapore University of Social Sciences", detail: "International Level", color: "#cd7f32", emoji: "🌏" },
+  { place: "3rd", event: "CONVENE National Level Project Competition", org: "Ideation Exhibition", detail: "National Level", color: "#cd7f32", emoji: "🥉" },
+  { place: "Consolation", event: "Innovation Fest", org: "Binghamton University New York", detail: "Collaboration", color: "#475569", emoji: "🏅" },
 ];
 
 const extras = [
@@ -501,7 +506,9 @@ export default function Page() {
           {honours.map((h, i) => (
             <div key={i} className="card hon-card">
               <span className="hon-emoji">{h.emoji}</span>
-              <span className="hon-place" style={{ color: h.color }}>{h.place} Place</span>
+              <span className="hon-place" style={{ color: h.color }}>
+                {h.place}{["1st", "2nd", "3rd"].includes(h.place) ? " Place" : " Prize"}
+              </span>
               <div className="hon-event">{h.event}</div>
               <div className="hon-org">{h.org}</div>
               <div className="hon-detail">{h.detail}</div>
